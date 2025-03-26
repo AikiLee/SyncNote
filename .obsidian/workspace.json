@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4059f5e56b371f5a",
+        "id": "e9b93871cb64d0cc",
         "type": "tabs",
         "children": [
           {
-            "id": "a25baf22010d2457",
+            "id": "8be1d17a32acfd47",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2025-03-26.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-03-26"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2025-03-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for 2025-03-26"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2025-03-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from 2025-03-26"
             }
           },
           {
@@ -136,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "2025-03-26.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of 2025-03-26"
             }
           }
         ]
@@ -158,9 +165,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-git:Open Git source control": false,
+      "github-sync:Sync with Remote": false
     }
   },
-  "active": "a25baf22010d2457",
-  "lastOpenFiles": []
+  "active": "8be1d17a32acfd47",
+  "lastOpenFiles": [
+    "Untitled.canvas",
+    "2025-03-26.md"
+  ]
 }
