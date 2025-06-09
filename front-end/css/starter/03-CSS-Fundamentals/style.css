@@ -1,0 +1,188 @@
+/* default setting */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /* color: #1098ad; */
+    font-family: sans-serif;
+    /* border-top: 10px solid #1098ad;
+    border-left: 10px solid #1098ad; */
+    border: 10px 20px solid #1098ad;
+    border-radius: 10px;
+    position: relative;
+}
+
+.container {
+    width: 700px;
+    /* 让容器中的元素居中 */
+    /* margin-left: auto;
+    margin-right: auto;; */
+    margin: 0 auto;
+    /* position: relative; */
+}
+.main-header {
+    border-right-color: #fff;
+    /* height: 100px; */
+    margin-bottom: 20px;
+}
+h1 {
+    color: rgba(16, 152, 173,0.5);
+}
+
+h1::first-letter {
+    font-size: 50px;
+    font-style: normal;
+}
+
+h2::first-letter {
+    font-style: italic;
+}
+
+h2::after {
+    content: "TOP";
+    color: black;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+/* + 兄弟选择器， */
+h3 + p::first-line {
+    color: red;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a:link {
+    /* background-color: orangered; */
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 20px;
+}
+/* 伪类之后套伪类，消除右边距，以防不对称 */
+nav a:link:last-child {
+    margin-right: 0;
+}
+
+h2,h3,h4 {
+    color: #1098ad; 
+    margin-top: 40px;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 30px;
+    /* background-color: orange; */
+}
+p {
+    margin-bottom: 20px;
+}
+.post-img {
+    width: 100%;
+    height: auto;
+}
+aside {
+    width: 500px;
+    background-color: #f7f7f7;
+    /* border:5px solid aqua;*/
+    /* 我们可以使用更加原子的操作来 */
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 50px 0;
+    margin-top:20px;
+    /* border-radius: 20px; */
+}
+/* 伪元素 */
+/* 选择第一个子元素(指定类型后也是要求第一个） */
+/* li:first-child {
+    background-color: red;
+} */
+/* li:last-child {
+    background-color: blue;
+} */
+li:nth-child(2) {
+    /* 选择特定位置的元素，从一开始 */
+    background-color: yellow;
+}
+/* 指定奇数，偶数是even */
+li:nth-child(odd) {
+    background-color: green;
+}
+
+
+/* article中含有p，并且p是第一个子元素 */
+article p:first-child{
+    color: red;
+}
+
+/* will apply to all attributes which have href */
+a:link{
+    color: #1098ad;
+    text-decoration: none; /* 超链接去掉下划线 */
+
+}
+
+/* when links are visited they will be gray */
+a:visited{
+
+    color: #777;
+    text-decoration: none;
+}
+/* when mouse hover over the link, they will turn orangered */
+a:hover {
+    color: orangered;
+    background-color: black;
+    font-weight: bold;
+    text-decoration: underline orangered;
+}
+/* when user truely click on the link, they will turn black */
+/* tips:hover 's bgc will be inherted by the active */
+a:active {
+    /* background-color: #000;; */
+    font-style: italic;
+}
+
+#copyright {
+    color: #1098ad;
+}
+
+.copyright {
+    color: red;
+}
+
+footer p {
+    color: black;
+}
+
+nav {
+    font-size: 18px;
+
+}
+
+button:link {
+    background-color: aqua;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+.like-button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+
+    position: absolute;
+
+    /* top: 900px; 这是页面的像素绝对位置，一般我们使用相对与父级元素的绝对位置 */
+    top: 2000px;
+    left: 700px;
+    /* 如果我们设置父级元素为relative，子级元素为absolute，那么子级元素就是相对于父级元素的绝对位置 */
+}
