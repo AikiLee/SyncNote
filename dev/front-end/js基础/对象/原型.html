@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 原型的本质，就是js对于继承的实现。原型存储在函数的prototype属性上的，
+        // 原型链，就是通过__proto__属性，将一个对象的原型指向另一个对象。
+        // 如何修改原型： case1:通过 类.prototype.xxx = () => {};  case2: 通过实例.__proto__
+        // 更不要通过实例来修改
+        // instanceOf() 检测一个对象是否是某个类的实例,检查的是圆形链上
+        // 实例.hasOwnProperty() 检测一个对象是否是某个类的实例,检查的是圆形链上.现在更加推荐使用Object.hasOwn(对象,"属性值")
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+            say() {
+                console.log(this.name);
+            }
+        }
+
+        class Dog extends Animal {
+            constructor(name) {
+                super(name);
+            }
+        }
+
+        const dog =new Dog('Tomdog');
+        console.log(dog instanceof Dog);
+        console.log(dog instanceof Animal);
+
+        
+
+
+    </script>
+</body>
+</html>
