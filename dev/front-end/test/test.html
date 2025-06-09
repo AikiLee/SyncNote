@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+// 捕获异步函数中的错误
+setTimeout(function() {
+  try {
+    noSuchVariable; // try...catch 处理 error 了！
+    lalll;
+  } catch(err) {
+    alert( "error 被在这里捕获了！" );
+    alert(err.name); // ReferenceError
+  alert(err.message); // lalala is not defined
+  alert(err.stack); // ReferenceError: lalala is not defined at (...call stack)
+
+  // 也可以将一个 error 作为整体显示出来
+  // error 信息被转换为像 "name: message" 这样的字符串
+  alert(err); // ReferenceError: lalala is not defined
+  }
+}, 1000);
+</script>

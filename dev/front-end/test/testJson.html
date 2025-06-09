@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<script>
+"use strict";
+
+let num = +prompt("输入一个正整数？", 35)
+
+let diff, result;
+
+function fib(n) {
+  if (n < 0 || Math.trunc(n) != n) {
+    throw new Error("不能是负数，并且必须是整数。");
+  }
+  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+}
+
+let start = Date.now();
+
+try {
+  result = fib(num);
+} catch (err) {
+  result = 0;
+} finally {
+  diff = Date.now() - start;
+}
+
+alert(result || "出现了 error");
+
+alert( `执行花费了 ${diff}ms` );
+</script>
